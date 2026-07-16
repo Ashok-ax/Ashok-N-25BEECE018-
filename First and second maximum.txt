@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int N,f1max,smax=-1,curr;
+    scanf("%d%d",&N,&f1max);
+    for(int ctr=2;ctr<=N;ctr++){
+        scanf("%d",&curr);
+        if(curr>f1max){
+            smax=f1max;
+            f1max=curr;
+        }else if(curr>smax){
+            smax=curr;
+        }
+    }
+    printf("%d %d",f1max,smax);
+    return 0;
+}
