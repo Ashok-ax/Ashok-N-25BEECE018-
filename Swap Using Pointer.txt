@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+void swapVals(int *a,int *b){
+    int t=*a;
+    *a=*b;
+    *b=t;
+}
+
+int main(){
+    int x=7,y=3;
+    cout<<"Before: "<<x<<","<<y<<endl;
+    swapVals(&x,&y);
+    cout<<"After: "<<x<<","<<y<<endl;
+    return 0;
+}
