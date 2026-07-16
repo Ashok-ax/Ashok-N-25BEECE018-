@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+    int maxval,n,cur;
+    scanf("%d%d",&maxval, &n);
+    for(int ctr=2;ctr<=n;ctr++){
+        scanf("%d",cur);
+        if(maxval=cur) 
+        maxval=cur;
+    }
+    printf("%d",maxval);
+    return 0;
+}
